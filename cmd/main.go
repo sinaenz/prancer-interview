@@ -21,7 +21,7 @@ func main() {
 	httpController := controller.HttpController{
 		CoordinatorService: coordinatorService,
 	}
-	router.HandleFunc("/move", httpController.Move())
+	router.HandleFunc("/move", httpController.Move()).Methods("POST")
 
 	// run http server
 	httpServer := http.Server{

@@ -7,7 +7,6 @@
     <list default="true" id="34166eca-6704-4ee8-a65d-3e26b84f2fbf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmd/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/controller/http.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/controller/http.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/service/mover.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/service/mover.go" afterDir="false" />
     </list>
