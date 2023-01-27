@@ -7,7 +7,7 @@ import (
 )
 
 type HttpController struct {
-	CoordinatorService service.Coordinator
+	CoordinatorService service.Center
 }
 
 func (h *HttpController) Move() http.HandlerFunc {
@@ -20,7 +20,10 @@ func (h *HttpController) Move() http.HandlerFunc {
 		defer request.Body.Close()
 		var controllerReq in
 		if err := json.NewDecoder(request.Body).Decode(&controllerReq); err != nil {
-			h.CoordinatorService.MoveAgent()
+			h.CoordinatorService.MoveAgent(request.Context(), &service.Target{
+				X: controllerReq.X,
+				Y: controllerReq.Y,
+			})
 			return
 		}
 	}
